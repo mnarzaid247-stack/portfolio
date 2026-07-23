@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Mnar Alzahrani, a statistics and data analysis graduate and backend developer." />
+  <title>Mnar Alzahrani | Data & Backend Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Go to homepage">MA<span>.</span></a>
+    <button class="menu-button" aria-label="Open navigation" aria-expanded="false">Menu</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Statistics · Data Analysis · Backend Engineering</p>
+        <h1>I turn data and backend logic into useful, reliable products.</h1>
+        <p class="hero-text">I am Mnar Alzahrani, a Statistics and Data Analysis graduate from King Saud University with hands-on experience in forecasting, API development, database design, authentication, and AI safety systems.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore my work</a>
+          <a class="button secondary" href="https://github.com/mnarzaid247-stack" target="_blank" rel="noreferrer">GitHub profile</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-label="Portfolio summary">
+        <div class="metric-card large"><span>04</span><p>Featured projects across data, AI, and backend engineering</p></div>
+        <div class="metric-row">
+          <div class="metric-card"><span>4.85</span><p>GPA out of 5</p></div>
+          <div class="metric-card"><span>1st</span><p>Class Honors</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading reveal"><p class="eyebrow">About</p><h2>Analytical thinking, backed by practical engineering.</h2></div>
+      <div class="about-grid reveal">
+        <p>I combine a strong statistical foundation with backend development skills. My work includes time-series forecasting, data visualization, REST API design, JWT authentication, relational databases, automated testing, and deployment.</p>
+        <p>I am especially interested in roles where data analysis and software engineering meet: Data Analyst, Junior Data Scientist, Backend Developer, and AI-focused technical roles.</p>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading reveal"><p class="eyebrow">Selected work</p><h2>Projects built to solve real problems.</h2></div>
+
+      <article class="project featured reveal">
+        <div class="project-media tourism-media"><img src="assets/tourism-cover.png" alt="Tourism in Saudi Arabia graduation project cover" /></div>
+        <div class="project-content">
+          <div class="project-meta"><span>Graduation Project</span><span>Data Analysis & Forecasting</span></div>
+          <h3>Tourism in Saudi Arabia: Insights, Trends and Forecasts</h3>
+          <p>A statistical study of inbound tourism in Riyadh, Makkah, and the Eastern Province using monthly data from 2015–2023, with forecasts for 2024 and 2025.</p>
+          <ul class="project-points">
+            <li>Applied time-series diagnostics including ADF, KPSS, ARCH, ACF, PACF, Ljung–Box, and residual analysis.</li>
+            <li>Built regional SARIMA/SARIMAX forecasting models and used a COVID-19 dummy variable for Makkah.</li>
+            <li>Handled missing data using Kalman-filter-based imputation and evaluated forecasts with rolling validation and MAPE.</li>
+            <li>Produced analytical visuals and dashboards using R, Excel, and Power BI.</li>
+          </ul>
+          <div class="tags"><span>R</span><span>Time Series</span><span>SARIMA</span><span>SARIMAX</span><span>Power BI</span><span>Excel</span>
+           <a class="text-link" href="assets/Report Of Toursim- manar AL-Zhrani.pdf" target="_blank" rel="noreferrer">
+    View Report ↗
+</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project featured reverse reveal">
+        <div class="project-media mockup-stack">
+          <img src="assets/asalah-1.png" alt="Asalah application mockup" />
+          <img src="assets/asalah-2.png" alt="Asalah application dashboard mockup" />
+          <img src="assets/asalah-3.png" alt="Asalah application child interface mockup" />
+        </div>
+        <div class="project-content">
+          <div class="project-meta"><span>Team Project</span><span>Backend Developer</span></div>
+          <h3>Asalah</h3>
+          <p>A gamified financial-literacy and values platform that helps Saudi families manage child tasks, rewards, wishes, and a points system called Noor Points.</p>
+          <ul class="project-points">
+            <li>Contributed to a layered Flask backend with routes, services, repositories, schemas, and SQLAlchemy models.</li>
+            <li>Worked on authentication, users, children, dashboards, JWT token flows, family relationships, and database behavior.</li>
+            <li>Implemented validation, role-based authorization, recurring tasks, cron jobs, API documentation, and automated pytest coverage.</li>
+            <li>Supported PostgreSQL deployment, migrations, performance indexing, CORS configuration, and frontend-backend integration.</li>
+          </ul>
+          <div class="tags"><span>Flask</span><span>SQLAlchemy</span><span>PostgreSQL</span><span>JWT</span><span>Pytest</span><span>REST API</span></div>
+          <a class="text-link" href="https://github.com/Norahxj/HolbertonSchool-Portfolio_Project" target="_blank" rel="noreferrer">View repository ↗</a>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="card-visual red-team"><span>AI</span><div class="scan-line"></div></div>
+          <div class="project-meta"><span>Team Project</span><span>Backend Lead</span></div>
+          <h3>SDA Red Teaming Platform</h3>
+          <p>A full-stack platform for testing language models against prompt injection, jailbreak, toxicity, data leakage, hallucination, and tool misuse scenarios.</p>
+          <ul class="project-points compact">
+            <li>FastAPI authentication and role-based access control.</li>
+            <li>Attack execution, AI judge evaluation, reports, and dashboard metrics.</li>
+            <li>Groq and OpenRouter model integrations with safe-response handling.</li>
+          </ul>
+          <div class="tags"><span>FastAPI</span><span>React</span><span>AI Safety</span><span>Docker</span></div>
+          <a class="text-link" href="https://github.com/mnarzaid247-stack/SDA-Red-Teaming" target="_blank" rel="noreferrer">View repository ↗</a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="card-visual hbnb"><img src="assets/hbnb-logo.png" alt="HBnB logo" /></div>
+          <div class="project-meta"><span>Holberton Project</span><span>Web Application</span></div>
+          <h3>HBnB — AirBnB Clone</h3>
+          <p>A modular Python web application inspired by AirBnB, covering domain models, REST APIs, persistence, authentication, and a browser client.</p>
+          <ul class="project-points compact">
+            <li>Designed object-oriented entities for users, places, reviews, and amenities.</li>
+            <li>Built Flask REST endpoints and data persistence layers.</li>
+            <li>Connected a lightweight HTML/CSS/JavaScript client to the backend API.</li>
+          </ul>
+          <div class="tags"><span>Python</span><span>Flask</span><span>REST API</span><span>SQL</span></div>
+          <a class="text-link" href="https://github.com/mnarzaid247-stack/holbertonschool-hbnb" target="_blank" rel="noreferrer">View repository ↗</a>
+        </article>
+
+        <article class="project-card wide reveal">
+          <div class="card-visual resume"><div class="paper"><strong>CV</strong><span>✓ Analysis</span><span>✓ Feedback</span><span>✓ Score</span></div></div>
+          <div class="project-meta"><span>SDA Bootcamp</span><span>Progressive Build</span></div>
+          <h3>Resume Evaluator</h3>
+          <p>A project developed progressively from a browser interface to a React application and then a FastAPI backend with schemas, authentication utilities, and stored evaluation data.</p>
+          <div class="tags"><span>HTML</span><span>JavaScript</span><span>React</span><span>FastAPI</span><span>Pydantic</span></div>
+          <a class="text-link" href="https://github.com/mnarzaid247-stack/SDA" target="_blank" rel="noreferrer">View repository ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-heading reveal"><p class="eyebrow">Capabilities</p><h2>A balanced data and backend toolkit.</h2></div>
+      <div class="skills-grid reveal">
+        <div><h3>Data & Statistics</h3><p>R, Excel, Power BI, SPSS, descriptive statistics, hypothesis testing, time-series analysis, forecasting, model diagnostics, data cleaning, and visualization.</p></div>
+        <div><h3>Backend Engineering</h3><p>Python, Flask, FastAPI, REST APIs, SQLAlchemy, PostgreSQL, SQLite, JWT, Marshmallow, Pydantic, layered architecture, and role-based access control.</p></div>
+        <div><h3>Engineering Tools</h3><p>Git, GitHub Actions, pytest, Docker, Linux, Swagger/OpenAPI, Alembic migrations, Render, Firebase Hosting, and API integration.</p></div>
+        <div><h3>Frontend Foundations</h3><p>HTML, CSS, JavaScript, React, Vite, Axios, Tailwind tooling, Flutter integration, and responsive web fundamentals.</p></div>
+      </div>
+    </section>
+
+    <section class="section education" id="education">
+      <div class="section-heading reveal"><p class="eyebrow">Education & recognition</p><h2>Built on a strong statistics foundation.</h2></div>
+      <div class="timeline reveal">
+        <div class="timeline-item"><span>King Saud University</span><h3>B.Sc. in Statistics and Data Analysis</h3><p>GPA 4.85/5 · First Class Honors · Ranked second in the graduating class.</p></div>
+        <div class="timeline-item"><span>Selected recognition</span><h3>Academic and analytical competitions</h3><p>Third place in a Riyadh real-estate forecasting competition and third place for the graduation project.</p></div>
+        <div class="timeline-item"><span>Professional development</span><h3>Software, data, and AI training</h3><p>Holberton software engineering training, SDA Python software development bootcamp, Tuwaiq SQL training, and certificates in AI, data science, and Power BI.</p></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-box reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something useful with data and reliable software.</h2>
+        <p>Open to opportunities in data analysis, junior data science, backend development, and AI-focused technical roles in Saudi Arabia.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://github.com/mnarzaid247-stack" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="button secondary" href="mailto:mnarzaid247@gmail.com" id="email-link">mnarzaid@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© <span id="year"></span> Mnar Alzahrani. Built with HTML, CSS, and JavaScript.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
